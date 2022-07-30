@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class = "page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="main-header">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="main-header__logo">
+            <img src="../images/logo_sedona.svg" width="185" height="96" alt="Седона">
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru/">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <img class="main-sedona-pic" src="../images/sedona-1.jpg" alt="Седона фотография на фон" width="1200" height="485">
+      <img class="main-welcome-pic" src="../images/welcome.svg" alt="Добро пожаловать в Седону" width="458" height="352">
+      <section class="advantages">
+        <h1 class="main-introduction">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="introduction-part-two">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+    </main>
   </body>
 </html>
