@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class = "page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="../images/logo_sedona.svg" width="185" height="96" alt="Седона">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="main-container__title visually-hidden">Поделитесь своими эмоциями на этой странице</h1>
+      <img class="main-container__sedona-picture" src="" alt="Седона фотография на фон" width="1200" height="485">
+      <img class="main-container__welcome-picture" src="" alt="Добро пожаловать в Седону" width="458" height="352">
+      <section class="feedback">
+        <header class="feedback__header">
+          <h2 class="visually-hidden">
+            Форма для отправки отзыва
+          </h2>
+          <p class="feedback__slogan">
+            Оставьте свой отзыв
+          </p>
+          <p class="feedback__intro">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </header>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="feedback-form__fullnameinfo fullnameinfo">
+            <legend class="fullnameinfo__title">Представьтесь: </legend>
+            <label class="fullnameinfo__label" for="input__name">Имя</label>
+            <input class="fullnameinfo__input" type="text" id="input__name" name="input__name" placeholder="Пётр">
+            <label class="fullnameinfo__label" for="input__family">Фамилия</label>
+            <input class="fullnameinfo__input" type="text" id="input__family" name="input__family" placeholder="Пустота">
+            <label class="fullnameinfo__label" for="input__secname">Отчество</label>
+            <input class="fullnameinfo__input" type="text" id="input__secname" name="input__secname" placeholder="Викторович">
+          </fieldset>
+          <fieldset class="feedback-form__contactinform contactinform">
+            <legend class="contactinform__title">Контактная информация: </legend>
+            <label class="contactinform__label" for="input__number">Контактный телефон*:</label>
+            <input class="contactinform__input" type="text" id="input__number" name="input__number" placeholder="Введите телефон">
+            <label class="contactinform__label" for="input__email">Электронная почта*:</label>
+            <input class="contactinform__input" type="text" id="input__email" name="input__email" placeholder="Введите e-mail">
+          </fieldset>
+          <fieldset class="feedback-form__feelings feelings">
+            <legend class="feelings__title">Ваше общее впечатление:</legend>
+            <input class="feelings__input" type="radio" name="feelings__positive" value="Скорее положительное" id="feelings__positive" checked>
+            <label class="feelings__label" for="feelings__positive">Скорее положительное</label>
+            <input class="feelings__input" type="radio" name="feelings__negative" value="Скорее отрицательное" id="feelings__negative" >
+            <label class="feelings__label" for="feelings__negative">Скорее отрицательное</label>
+            <input class="feelings__input" type="radio" name="feelings__idk" value="Затрудняюсь ответить" id="feelings__idk" >
+            <label class="feelings__label" for="feelings__idk">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset class="feedback-form__checkattraction checkattraction">
+            <legend class="checkattraction__title">Посещенные достопримечательности: </legend>
+            <input class="checkattraction__input" type="checkbox" name="checkattraction__devilbridge" value="Мост дьявола" id="checkattraction__devilbridge" checked>
+            <label class="checkattraction__label" for="checkattraction__devilbridge">Мост дьявола</label>
+            <input class="checkattraction__input" type="checkbox" name="checkattraction__hillbell" value="Гора-колокол" id="checkattraction__hillbell" checked>
+            <label class="checkattraction__label" for="checkattraction__hillbell">Гора-колокол</label>
+            <input class="checkattraction__input" type="checkbox" name="checkattraction__slidepark" value="Слайд-парк" id="checkattraction__slidepark" checked>
+            <label class="checkattraction__label" for="checkattraction__slidepark">Слайд-парк</label>
+            <input class="checkattraction__input" type="checkbox" name="checkattraction_redrocks" value="Красные скалы" id="checkattraction_redrocks">
+            <label class="checkattraction__label" for="checkattraction_redrocks">Красные скалы</label>
+          </fieldset>
+          <fieldset class="feedback-form__desripfeels desripfeels">
+            <legend class="desripfeels__title">Опишите свои эмоции: </legend>
+            <label class="desripfeels__label" for="desripfeels__text"></label>
+            <input class="desripfeels__input" type="text" id="desripfeels__text" name="desripfeels__text" placeholder="Опишите подробно все свои восторги">
+          </fieldset>
+          <button type="submit" class="feedback-form__button" name="button-sendreview">Отправить отзыв</button>
+          <small class="feedback-form__legend">
+            * — обязательные поля
+          </small>
+      </form>
+      </section>
+      <section class ="sent">
+        <div>
+          <p class="sent__slogan">
+            Ваш отзыв отправлен
+          </p>
+          <p class="sent__intro">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте
+          </p>
+          <button type="submit" class="sent__button" name="button-close">Закрыть окно</button>
+        </div>
+      </section>
+      <section class ="error">
+        <div>
+          <p class="error__slogan">
+            Что-то пошло не так!
+          </p>
+          <p class="error__intro">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+          <button type="submit" class="error__button" name="button-ok">Ок</button>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <p class = "main-footer__hashtag">#visitsedona</p>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__social-list__item">
+              <a class="main-footer__social-list__logo-vk" href="https://vk.com/htmlacademy">
+                <svg width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h48v48H0z"/><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948c.166-.546 0-.948-.795-.948H32.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738v-5.109c0-.656-.184-.948-.74-.948h-4.128c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885-.249-.715-.501-1.003-1.172-1.003H12.9c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551C18.315 29.341 21.37 31 24.153 31c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C31.11 30.216 31.403 31 32.405 31h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z" fill="#fff"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 12)" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+                <span class="visually-hidden">vk</span>
+              </a>
+          </li>
+          <li class="main-footer__social-list__item">
+              <a class="main-footer__social-list__logo-tg" href="https://t.me/htmlacademy">
+                <svg width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h48v48H0z"/><path d="M34.4393 16.6223 31.2705 31.566c-.2392 1.0545-.8625 1.317-1.7482.8205l-4.8285-3.558-2.3295 2.241c-.258.258-.4733.4733-.9705.4733l.3472-4.917 8.9483-8.0858c.3892-.3465-.0848-.5392-.6045-.192l-11.0625 6.966-4.7625-1.491c-1.0358-.3232-1.0545-1.0357.216-1.533l18.6277-7.1767c.8625-.3233 1.617.192 1.3358 1.5097v-.0007Z" fill="#fff"/></svg>
+                <span class="visually-hidden">telegram</span>
+              </a>
+          </li>
+          <li class="main-footer__social-list__item">
+            <a class="main-footer__social-list__logo-yt" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#81B3D2" d="M0 0h48v48H0z"/><path d="M31.1813 17h-14.368C15.3062 17 14 18.3 14 19.8v8.3c0 1.6 1.3062 2.9 2.8133 2.9h14.368c1.6076 0 2.8133-1.3 2.8133-2.8v-8.4c.1004-1.5-1.2057-2.8-2.8133-2.8Zm-10.148 10.4v-6.8l6.8323 3.4-6.8323 3.4Z" fill="#fff"/></svg>
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="htmlacademy.ru">
+            <svg width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
