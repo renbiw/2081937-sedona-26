@@ -52,14 +52,14 @@
           </p>
         </header>
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="feedback-form__fullnameinfo fullnameinfo">
-            <legend class="fullnameinfo__title">Представьтесь: </legend>
-            <label class="fullnameinfo__label" for="input__name">Имя</label>
-            <input class="fullnameinfo__input" type="text" id="input__name" name="input__name" placeholder="Пётр">
-            <label class="fullnameinfo__label" for="input__family">Фамилия</label>
-            <input class="fullnameinfo__input" type="text" id="input__family" name="input__family" placeholder="Пустота">
-            <label class="fullnameinfo__label" for="input__secname">Отчество</label>
-            <input class="fullnameinfo__input" type="text" id="input__secname" name="input__secname" placeholder="Викторович">
+          <fieldset class="feedback-form__full-name-info full-name-info">
+            <legend class="full-name-info__title">Представьтесь: </legend>
+            <label class="full-name-info__label" for="input__name">Имя</label>
+            <input class="full-name-info__input" type="text" id="input__name" name="input__name" placeholder="Пётр">
+            <label class="full-name-info__label" for="input__family">Фамилия</label>
+            <input class="full-name-info__input" type="text" id="input__family" name="input__family" placeholder="Пустота">
+            <label class="full-name-info__label" for="input__secname">Отчество</label>
+            <input class="full-name-info__input" type="text" id="input__secname" name="input__secname" placeholder="Викторович">
           </fieldset>
           <fieldset class="feedback-form__contactinform contactinform">
             <legend class="contactinform__title">Контактная информация: </legend>
@@ -88,10 +88,10 @@
             <input class="checkattraction__input" type="checkbox" name="checkattraction_redrocks" value="Красные скалы" id="checkattraction_redrocks">
             <label class="checkattraction__label" for="checkattraction_redrocks">Красные скалы</label>
           </fieldset>
-          <fieldset class="feedback-form__desripfeels desripfeels">
-            <legend class="desripfeels__title">Опишите свои эмоции: </legend>
-            <label class="desripfeels__label" for="desripfeels__text"></label>
-            <input class="desripfeels__input" type="text" id="desripfeels__text" name="desripfeels__text" placeholder="Опишите подробно все свои восторги">
+          <fieldset class="feedback-form__description-emotions description-emotions">
+            <legend class="description-emotions__title">Опишите свои эмоции: </legend>
+            <label class="description-emotions__label" for="description-emotions__text"></label>
+            <input class="description-emotions__input" type="text" id="description-emotions__text" name="description-emotions__text" placeholder="Опишите подробно все свои восторги">
           </fieldset>
           <button type="submit" class="feedback-form__button" name="button-sendreview">Отправить отзыв</button>
           <small class="feedback-form__legend">
@@ -99,26 +99,26 @@
           </small>
       </form>
       </section>
-      <section class ="sent">
+      <section class ="modal-sent-review">
         <div>
-          <p class="sent__slogan slogan">
+          <p class="modal-sent-review__slogan slogan">
             Ваш отзыв отправлен
           </p>
-          <p class="sent__intro">
+          <p class="modal-sent-review__intro">
             Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте
           </p>
-          <button type="submit" class="sent__button" name="button-close">Закрыть окно</button>
+          <button type="submit" class="modal-sent-review__button" name="button-close">Закрыть окно</button>
         </div>
       </section>
-      <section class ="error">
+      <section class ="modal-error">
         <div>
-          <p class="error__slogan slogan">
+          <p class="modal-error__slogan slogan">
             Что-то пошло не так!
           </p>
-          <p class="error__intro">
+          <p class="modal-error__intro">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-          <button type="submit" class="error__button" name="button-ok">Ок</button>
+          <button type="submit" class="modal-error__button" name="button-ok">Ок</button>
         </div>
       </section>
     </main>
