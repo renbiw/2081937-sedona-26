@@ -11,3 +11,17 @@
     font-size: 21px;
     line-height: 26px;
 }
+
+.feelings {
+    display: flex;
+    flex-direction: row;
+
+    @media (min-width: @tablet-width) {
+        flex-direction: column;
+    }
+
+    @media (min-width: @desktop-width) {
+        flex-direction: column;
+    }
+    
+}
