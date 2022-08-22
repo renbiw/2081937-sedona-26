@@ -1,27 +1,26 @@
 .checkattraction__label {
-    text-transform: none;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .checkattraction__title {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    margin-bottom: 69px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-bottom: 69px;
 }
 
 .checkattraction {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
     flex-direction: row;
+  }
 
-    @media (min-width: @tablet-width) {
-        flex-direction: column;
-    }
+  // @media (min-width: @desktop-width) {
 
-    @media (min-width: @desktop-width) {
-        flex-direction: column;
-    }
-    
+  // }
 }

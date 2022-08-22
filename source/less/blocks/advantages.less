@@ -1,53 +1,67 @@
 .advantages {
-    .flex();
+  .flex();
 }
 
 .advantages__list {
-    list-style-type: none;
+  list-style-type: none;
+  .flex();
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
     .flex();
-    padding: 0;
-    margin: 0;
-    @media (min-width: @desktop-width) {
-        display: block;
-      }
-  
-    @media (min-width: @tablet-width) {
-      .flex();
-      flex: 1 1 30%;
-      padding-top: 0;
-      min-height: 256px;
-    }
+    padding-top: 0;
+  }
+}
+
+.advantages__item__sedona-image {
+  order: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
 }
 
 .advantages__item-container {
-    background-color: #81b3d2;
-    color: #ffffff;
+  background-color: #81b3d2;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .advantages__title {
-    font-size: 21px;
-    line-height: 26px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .advantages__slogan {
-    font-size: 21px;
-    line-height: 36px;
-    font-weight: 700;
+  font-size: 21px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .advantages__container {
-    width: 282px;
+  // width: 282px;
 
-    @media (min-width: @tablet-width) {
-        width: 520px;
-    }       
-    @media (min-width: @desktop-width) {
-        width: 484px;
-    }
+  // @media (min-width: @tablet-width) {
+  //   width: 520px;
+  // }
+  // @media (min-width: @desktop-width) {
+  //   width: 484px;
+  // }
 }
-
-
-
-
-
-
