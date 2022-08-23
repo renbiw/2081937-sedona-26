@@ -1,15 +1,19 @@
 .advantages {
   display: flex;
+  flex-direction: column;
 }
 
 .advantages__list {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
 
   @media (min-width: @desktop-width) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @tablet-width) {
@@ -31,6 +35,10 @@
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
+
+  &--without-pic {
+    max-width: 30%;
+  }
 }
 
 .advantages__item-container {
