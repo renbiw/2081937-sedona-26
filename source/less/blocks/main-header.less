@@ -1,14 +1,14 @@
-.site-list {
-  list-style-type: none;
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 
-.site-list__link {
+.main-header__logo {
+  height: 56px;
 
-  font-weight: 700;
-  text-decoration: none;
-  color: #000000;
-
-  &--active {
-    color: #766357;
+  @media (min-width: @tablet-width) {
+    height: 56px;
   }
 }

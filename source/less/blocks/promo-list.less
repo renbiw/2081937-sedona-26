@@ -1,4 +1,10 @@
 .promo-list {
-    list-style-type: none;
-    background-color: #e7e5e5;
-  }
+  list-style-type: none;
+  background-color: #e7e5e5;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+      flex-wrap: nowrap;
+    }
+}
