@@ -8,10 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1050px;
+    flex-grow: 1;
   }
 }
 
@@ -19,6 +16,7 @@
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
+  text-align: center;
 
   position: relative;
   display: block;
@@ -31,7 +29,11 @@
   border-top: 1px solid #8ec4e5;
   border-bottom: 1px solid #6a93ad;
 
+
   @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    border-top: none;
+    border-bottom: none;
     color: #000000;
     &--active {
       color: #766357;
