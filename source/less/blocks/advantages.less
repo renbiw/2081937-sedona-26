@@ -35,9 +35,10 @@
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
-
-  &--without-pic {
-    max-width: 30%;
+  &--without-pic{
+    @media (min-width: @tablet-width) {
+      max-width: 30%;
+    }
   }
 }
 
@@ -61,4 +62,19 @@
   font-size: 21px;
   line-height: 36px;
   font-weight: 700;
+}
+
+.advantages__container-without-pic {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.advantages__item-container-for-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
