@@ -1,4 +1,5 @@
 .contactinform__title {
+  text-align: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -8,12 +9,22 @@
 .contactinform {
   display: flex;
   flex-direction: column;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 
   @media (min-width: @tablet-width) {
     width: 40%;
+    border-top: none;
+    border-left: 1px solid #dbdbdb;
   }
 
   // @media (min-width: @desktop-width) {
 
   // }
+}
+
+.contactinform__input {
+  background-color: #f2f2f2;
+  border: none;
 }

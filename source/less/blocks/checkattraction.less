@@ -6,6 +6,7 @@
 }
 
 .checkattraction__title {
+  text-align: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -15,12 +16,30 @@
 .checkattraction {
   display: flex;
   flex-direction: column;
+  border: none;
+  border-top: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    width: 80%;
+    border-color: #dbdbdb;
   }
 
-  // @media (min-width: @desktop-width) {
+   @media (min-width: @desktop-width) {
+    width: 100%;
+   }
+}
 
-  // }
+.checkattraction__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 38%;
+  }
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }

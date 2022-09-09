@@ -2,6 +2,11 @@
   background-image: url("../img/sedona-1.jpg");
   width: 1200px;
   height: 518px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 50% 0;
+    background-size: cover;
+  }
 }
 
 .main-container__sedona-picture::after {
@@ -10,7 +15,6 @@
   width: 1200px;
   height: 57px;
   position: absolute;
-  top: 70%;
 }
 
 .main-container__welcome-picture {

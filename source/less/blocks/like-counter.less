@@ -1,0 +1,36 @@
+.like-counter {
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 85%;
+    right: 5%;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+  }
+}
+
+.like-counter__like-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.like-counter__like-btn svg {
+  fill: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+  }
+}
+
+.like-counter__like-count {
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}

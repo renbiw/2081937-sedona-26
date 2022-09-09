@@ -1,9 +1,13 @@
 .full-name-info {
   display: flex;
   flex-direction: column;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 
   @media (min-width: @tablet-width) {
     width: 40%;
+    border-top: none;
   }
 
   // @media (min-width: @desktop-width) {
@@ -12,8 +16,14 @@
 }
 
 .full-name-info__title {
+  text-align: center;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 49px;
+}
+
+.full-name-info__input {
+  background-color: #f2f2f2;
+  border: none;
 }

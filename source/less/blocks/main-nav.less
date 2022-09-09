@@ -1,22 +1,106 @@
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper {
-    display: flex;;
-    justify-content: space-between;
-    width: 768px;
-    margin: 0 auto;
-  }
+.main-nav {
+  background-color: #ffffff;
+}
 
-  .main-nav__toggle {
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  display: block;
+  width: 63px;
+  height: 56px;
+  color: #81b3d2;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .main-nav__wrapper {
-    width: 1050px;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 22px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 6px 0 0 #81b3d2, 0 12px 0 0 #81b3d2;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#81b3d2, 30%);
+  box-shadow:
+    0 6px 0 0 fade(#81b3d2, 30%),
+    0 12px 0 0 fade(#81b3d2, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  right: 2%;
+  z-index: 100;
+  background-color: #81b3d2;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
   }
 
-  .main-nav__toggle {
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__link {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__link {
+    display: none;
+  }
+  .main-nav {
+    min-height: 56px;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #81b3d2;
+  }
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 7px;
+    height: 100%;
+    box-shadow: inset 4px 0 7px -2px fade(#000000, 40%);
+  }
+
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }

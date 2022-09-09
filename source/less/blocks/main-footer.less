@@ -1,15 +1,30 @@
 .main-footer {
   margin: 36px 0;
+  @media (min-width: @tablet-width) {
+    padding-left: 45px;
+  }
 }
 
 .main-footer__social-list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  column-gap: 6px;
 }
 
 .main-footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    column-gap: 110px;
+  }
 }
