@@ -63,7 +63,11 @@
             </header>
             <ul class="mediafiles__list">
               <li class="mediafiles__item">
-                <img class="mediafiles__image" src="./img//nationalspaces.jpg" alt="Неродные просторы" width="1200" height="400">
+                <picture class="mediafiles__image">
+                  <source media="(min-width: 768px)" srcset="./img/nationalspaces-desktop.jpg">
+                  <source media="(min-width: 1200px)" srcset="./img/nationalspaces-tablet.jpg">
+                  <img src="./img//nationalspaces-phone.jpg" alt="Неродные просторы">
+                </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Неродные просторы</p>
                   <p class="description__name-author">Автор фото: Борис</p>
@@ -76,7 +80,11 @@
                 </div>
               </li>
               <li class="mediafiles__item">
-                <img class="mediafiles__image" src="./img/localflora.jpg" alt="Местная растительность" width="400" height="267">
+                <picture class="mediafiles__image">
+                  <source media="(min-width: 768px)" srcset="./img/localflora-desktop.jpg">
+                  <source media="(min-width: 1200px)" srcset="./img/localflora-tablet.jpg">
+                  <img src="./img//localflora-phone.jpg" alt="Местная растительность">
+                </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Местная растительность</p>
                   <p class="description__name-author">Автор фото: Сергей</p>
@@ -89,7 +97,11 @@
                 </div>
               </li>
               <li class="mediafiles__item">
-                <img class="mediafiles__image" src="./img/roadtonorth.jpg" alt="Дорога на север" width="400" height="267">
+                <picture class="mediafiles__image">
+                  <source media="(min-width: 768px)" srcset="./img/roadtonorth-desktop.jpg">
+                  <source media="(min-width: 1200px)" srcset="./img/roadtonorth-tablet.jpg">
+                  <img src="./img//roadtonorth-phone.jpg" alt="Дорога на север">
+                </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Дорога на север</p>
                   <p class="description__name-author">Автор фото: Пётр</p>
@@ -102,7 +114,11 @@
                 </div>
               </li>
               <li class="mediafiles__item">
-                <img class="mediafiles__image" src="./img/devilsbridge.jpg" alt="Мост дьявола" width="400" height="267">
+                <picture class="mediafiles__image">
+                  <source media="(min-width: 768px)" srcset="./img/devilsbridge-desktop.jpg">
+                  <source media="(min-width: 1200px)" srcset="./img/devilsbridge-tablet.jpg">
+                  <img src="./img//devilsbridge-phone.jpg" alt="Мост дьявола">
+                </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Мост дьявола</p>
                   <p class="description__name-author">Автор фото: Антон</p>
@@ -120,7 +136,11 @@
         <section class="videopresentation">
           <b class="videopresentation__title">Все еще сомневаетесь?</b>
           <p class="videopresentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="videopresentation__video" src="./img/videopresentation-promo.jpg" alt="Видеопрезентация Седоны" width="800" height="500">
+          <picture class="videopresentation__video">
+            <source media="(min-width: 768px)" srcset="./img/videopresentation-promo-desktop.jpg">
+            <source media="(min-width: 1200px)" srcset="./img/videopresentation-promo-tablet.jpg">
+            <img src="./img//videopresentation-promo-phone.jpg" alt="Видеопрезентация Седоны">
+          </picture>
         </section>
       </main>
       <footer class="main-footer">
