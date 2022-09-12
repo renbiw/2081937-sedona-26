@@ -37,3 +37,21 @@
     background-color: #eaeaea;
   }
 }
+
+.mediafiles__image {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 267px;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.mediafiles__image--wide {
+  @media (min-width: @tablet-width) {
+    max-width: 1200px;
+    min-height: 400px;
+    display: block;
+    object-fit: cover;
+  }
+}
