@@ -19,25 +19,18 @@
 .main-container__sedona-picture::after {
   background-image: url("../img/border.svg");
   content: "";
-  width: 1200px;
+  width: 100%;
   height: 57px;
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   object-fit: cover;
-  margin-left: -300px;
-  @media (min-width: @tablet-width) {
-    margin-left: -100px;
-  }
-  @media (min-width: @desktop-width) {
-    margin-left: 0;
-  }
 }
 
 .main-container__welcome-picture {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(20%);
-  top: 0%;
+  top: 0;
 
   &--sedona-header {
     left: 50%;
