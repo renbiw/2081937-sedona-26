@@ -2,8 +2,8 @@
 <html class = "page" lang="ru">
   <head>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,10 +63,13 @@
             </header>
             <ul class="mediafiles__list">
               <li class="mediafiles__item">
-                <picture class="mediafiles__image">
-                  <source media="(min-width: 768px)" srcset="./img/nationalspaces-desktop.jpg">
-                  <source media="(min-width: 1200px)" srcset="./img/nationalspaces-tablet.jpg">
-                  <img src="./img//nationalspaces-phone.jpg" alt="Неродные просторы">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./img/nationalspaces-desktop.jpg 1x, ./img/nationalspaces-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="./img/nationalspaces-tablet.jpg 1x, ./img/nationalspaces-tablet@2x.jpg 2x">
+                  <img class="mediafiles__image mediafiles__image--wide" src="./img/nationalspaces-phone.jpg" width="280"
+                  height="280" srcset="./img/nationalspaces-phone@2x.jpg 2x" alt="Неродные просторы">
                 </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Неродные просторы</p>
@@ -80,10 +83,11 @@
                 </div>
               </li>
               <li class="mediafiles__item">
-                <picture class="mediafiles__image">
-                  <source media="(min-width: 768px)" srcset="./img/localflora-desktop.jpg">
-                  <source media="(min-width: 1200px)" srcset="./img/localflora-tablet.jpg">
-                  <img src="./img//localflora-phone.jpg" alt="Местная растительность">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/localflora-desktop.jpg 1x, ./img/localflora-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/localflora-tablet.jpg 1x, ./img/localflora-tablet@2x.jpg 2x">
+                  <img class="mediafiles__image" src=".img/localflora-phone.jpg" width="280"
+                  height="280" srcset="./img/localflora-phone@2x.jpg 2x" alt="Местная растительность">
                 </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Местная растительность</p>
@@ -97,10 +101,11 @@
                 </div>
               </li>
               <li class="mediafiles__item">
-                <picture class="mediafiles__image">
-                  <source media="(min-width: 768px)" srcset="./img/roadtonorth-desktop.jpg">
-                  <source media="(min-width: 1200px)" srcset="./img/roadtonorth-tablet.jpg">
-                  <img src="./img//roadtonorth-phone.jpg" alt="Дорога на север">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/roadtonorth-desktop.jpg 1x, ./img/roadtonorth-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/roadtonorth-tablet.jpg 1x, ./img/roadtonorth-tablet@2x.jpg 2x">
+                  <img class="mediafiles__image" src=".img/roadtonorth-phone.jpg" width="280"
+                  height="280" srcset="./img/roadtonorth-phone@2x.jpg 2x" alt="Местная растительность">
                 </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Дорога на север</p>
@@ -114,10 +119,11 @@
                 </div>
               </li>
               <li class="mediafiles__item">
-                <picture class="mediafiles__image">
-                  <source media="(min-width: 768px)" srcset="./img/devilsbridge-desktop.jpg">
-                  <source media="(min-width: 1200px)" srcset="./img/devilsbridge-tablet.jpg">
-                  <img src="./img//devilsbridge-phone.jpg" alt="Мост дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/devilsbridge-desktop.jpg 1x, ./img/devilsbridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/devilsbridge-tablet.jpg 1x, ./img/devilsbridge-tablet@2x.jpg 2x">
+                  <img class="mediafiles__image" src=".img/devilsbridge-phone.jpg" width="280"
+                  height="280" srcset="./img/devilsbridge-phone@2x.jpg 2x" alt="Местная растительность">
                 </picture>
                 <div class = "mediafiles__description description">
                   <p class="description__name">Мост дьявола</p>
@@ -136,11 +142,16 @@
         <section class="videopresentation">
           <b class="videopresentation__title">Все еще сомневаетесь?</b>
           <p class="videopresentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <picture class="videopresentation__video">
-            <source media="(min-width: 768px)" srcset="./img/videopresentation-promo-desktop.jpg">
-            <source media="(min-width: 1200px)" srcset="./img/videopresentation-promo-tablet.jpg">
-            <img src="./img//videopresentation-promo-phone.jpg" alt="Видеопрезентация Седоны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/videopresentation-promo-desktop.jpg 1x, ./img/videopresentation-promo-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/videopresentation-promo-tablet.jpg 1x, ./img/videopresentation-promo-tablet@2x.jpg 2x">
+            <img class="videopresentation__video" src=".img/videopresentation-promo-phone.jpg" width="280"
+            height="177" srcset="./img/videopresentation-promo-phone@2x.jpg 2x" alt="Видеопрезентация Седоны">
           </picture>
+          <svg class="videopresentation__play-icon" width="48" height="55" aria-hidden="true" focusable="false" viewBox="0 0 48 55"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m48 27.02-48 27v-54l48 27Z" fill="#fff" fill-opacity=".7" />
+          </svg>
         </section>
       </main>
       <footer class="main-footer">
