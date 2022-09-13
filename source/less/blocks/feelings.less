@@ -1,10 +1,3 @@
-.feelings__label {
-  text-transform: none;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
 .feelings__title {
   text-align: center;
   margin-bottom: 55px;
@@ -51,4 +44,35 @@
     width: 100%;
   }
 
+}
+
+.feelings__label {
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.feelings__label::before {
+  margin-right: 19px;
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.feelings__input:focus + .feelings__label::before {
+
+}
+
+.feelings__input:checked + .feelings__label::before {
+  background-color: #f2f2f2;
+}
+
+.feelings__input:checked:focus + .feelings__label::before {
+  box-shadow: none;
+  outline: 15px solid #333333;
 }

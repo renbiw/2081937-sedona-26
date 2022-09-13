@@ -4,6 +4,7 @@
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 49px;
+  padding: 0;
 }
 
 .contactinform {
@@ -12,6 +13,7 @@
   border-bottom: none;
   border-left: none;
   border-right: none;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 40%;
@@ -27,4 +29,22 @@
 .contactinform__input {
   background-color: #f2f2f2;
   border: none;
+  padding: 16px;
+  max-width: 398px;
+}
+
+.contactinform__image-phone {
+  position: absolute;
+  top: 45px;
+  right: 80px;
+}
+
+.contactinform__image-mail {
+  position: absolute;
+  top: 110px;
+  right: 80px;
+}
+
+.contactinform__label {
+  max-width: 398px;
 }
