@@ -37,6 +37,10 @@
   }
 }
 
+.checkattraction__input {
+  display: none;
+}
+
 .checkattraction__input:focus + .checkattractionx__label::before {
   outline: 3px solid #83B3D3;
 }
@@ -49,25 +53,32 @@
   font-weight: 700;
 }
 .checkattraction__label::before {
-  width: 20px;
-  height: 20px;
+  width: 46px;
+  height: 46px;
   content: "";
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   border-radius: 4px;
-  margin-right: 19px;
+  margin-right: 16px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 13px 10px;
+  background-size: 22px 16px;
 
 }
 .checkattraction__label:hover::before {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #f2f2f2;
 }
-.checkattraction__label:active::before {
+.checkattraction__input:checked + .checkattraction__label:active::before {
   background-color: rgba(255, 255, 255, 0.3);
+  background-image: url("../img/checkboxcheckedstate.svg");
 }
-.checkattraction__input:checked + .custom-checkbox__label::before {
-  background-image: url("/source/img/checkedstateinput.svg");
-  width: 20px;
-  height: 20px;
+.checkattraction__input:checked + .checkattraction__label::before {
+  background-image: url("../img/checkboxcheckedstate.svg");
+  width: 46px;
+  height: 46px;
+}
+
+.checkattraction__label:disabled:before {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 46px;
+  height: 46px;
 }

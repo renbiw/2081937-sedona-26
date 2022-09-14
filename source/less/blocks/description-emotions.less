@@ -9,7 +9,38 @@
 }
 
 .description-emotions {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+
   @media (min-width: @tablet-width) {
     width: 80%;
   }
+}
+
+.description-emotions__input {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 160px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    height: 160px;
+  }
+}
+
+.description-emotions__input:hover {
+  color: #000000;
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.description-emotions__input:focus-within {
+  color: #000000;
+  background-color: #ffffff;
+  outline: solid 4px #e5e5e5;
+  outline-offset: -4px;
 }

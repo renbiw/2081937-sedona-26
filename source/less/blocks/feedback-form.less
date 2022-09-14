@@ -6,9 +6,24 @@
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  padding: 34px 60px 13px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 60px 13px 49px;
+  }
 }
 
 .feedback-form {
   display: flex;
   flex-wrap: wrap;
+}
+
+.feedback-form__legend {
+
+  @media (min-width: @tablet-width) {
+    margin-left: 132px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 180px;
+  }
 }

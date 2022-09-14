@@ -61,6 +61,7 @@
 }
 
 .advantages__slogan {
+  margin: 0;
   font-size: 21px;
   line-height: 36px;
   font-weight: 700;
@@ -79,4 +80,14 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.advantages__container {
+  padding: 32px 0px 16px;
+  @media (min-width: @tablet-width) {
+    padding: 47px 100px 55px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 59px 200px 44px;
+  }
 }
