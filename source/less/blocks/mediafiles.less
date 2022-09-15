@@ -7,6 +7,7 @@
   font-size: 30px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .mediafiles__list {
@@ -53,5 +54,12 @@
     min-height: 400px;
     display: block;
     object-fit: cover;
+  }
+}
+
+.mediafiles__description-container {
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
   }
 }
