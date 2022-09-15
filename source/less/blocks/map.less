@@ -1,4 +1,14 @@
-.map iframe{
+.map__interactive {
   border: none;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 350px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 350px;
+  }
+
 }
