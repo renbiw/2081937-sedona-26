@@ -19,6 +19,7 @@
     width: 40%;
     border-top: none;
     border-left: 1px solid #dbdbdb;
+    padding-left: 63px;
   }
 
   // @media (min-width: @desktop-width) {
@@ -29,22 +30,47 @@
 .contactinform__input {
   background-color: #f2f2f2;
   border: none;
-  padding: 16px;
-  max-width: 398px;
+  padding: 21px;
+  max-width: 344px;
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .contactinform__image-phone {
   position: absolute;
-  top: 45px;
-  right: 80px;
+  top: 17px;
+  right: 19px;
 }
 
 .contactinform__image-mail {
   position: absolute;
-  top: 110px;
-  right: 80px;
+  top: 24px;
+  right: 21px;
 }
 
 .contactinform__label {
   max-width: 398px;
+  margin-left: 12px;
+}
+
+.contactinform__container-for-image-mail {
+  background-color: #e6e6e6;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  @media (min-width: @tablet-width) {
+    top: 121px;
+    right: 105px;
+  }
+}
+
+.contactinform__container-for-image-phone {
+  background-color: #e6e6e6;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  @media (min-width: @tablet-width) {
+    top: 25px;
+    right: 105px;
+  }
 }

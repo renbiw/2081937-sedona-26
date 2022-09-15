@@ -3,17 +3,21 @@
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 28px;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  text-align: center;
 }
 
 .description-emotions {
   border: none;
   border-top: 1px solid #e5e5e5;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     width: 80%;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 87px;
   }
 }
 
@@ -23,12 +27,15 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 118px;
+    padding-top: 16px;
     width: 648px;
-    height: 160px;
   }
   @media (min-width: @desktop-width) {
-    width: 768px;
-    height: 160px;
+   padding-bottom: 118px;
+   padding-top: 16px;
+   width: 648px;
+   margin-left: 96px;
   }
 }
 

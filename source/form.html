@@ -57,9 +57,11 @@
             <p class="feedback__slogan slogan">
               Оставьте свой отзыв
             </p>
-            <p class="feedback__intro">
-              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-            </p>
+            <div class="feedback__container-for-intro">
+              <p class="feedback__intro">
+                Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+              </p>
+            </div>
           </header>
           <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="feedback-form__full-name-info full-name-info">
@@ -72,8 +74,12 @@
               <input class="full-name-info__input" type="text" id="input__secname" name="input__secname" placeholder="Викторович">
             </fieldset>
             <fieldset class="feedback-form__contactinform contactinform">
-              <img class ="contactinform__image-phone" src="./img/phone.svg" width="18" height="18" alt="Телефон">
-              <img class ="contactinform__image-mail" src="./img/mail.svg" width="16" height="12" alt="Почта">
+              <div class="contactinform__container-for-image-phone">
+                <img class ="contactinform__image-phone" src="./img/phone.svg" width="18" height="18" alt="Телефон">
+              </div>
+              <div class="contactinform__container-for-image-mail">
+                <img class ="contactinform__image-mail" src="./img/mail.svg" width="16" height="12" alt="Почта">
+              </div>
               <legend class="contactinform__title">Контактная информация: </legend>
               <label class="contactinform__label" for="input__number">Контактный телефон*:</label>
               <input class="contactinform__input" type="text" id="input__number" name="input__number" placeholder="Введите телефон">
@@ -92,7 +98,7 @@
               </div>
             </fieldset>
             <fieldset class="feedback-form__checkattraction checkattraction">
-              <legend class="checkattraction__title">Посещенные достопримечательности: </legend>
+              <legend class="checkattraction__title">Посещенные<br>достопримечательности: </legend>
               <div class ="checkattraction__container">
                 <input class="checkattraction__input" type="checkbox" name="checkattraction__devilbridge" value="Мост дьявола" id="checkattraction__devilbridge" checked>
                 <label class="checkattraction__label" for="checkattraction__devilbridge">Мост дьявола</label>

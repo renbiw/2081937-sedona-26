@@ -9,7 +9,6 @@
     width: 40%;
     border-top: none;
     margin-left: 120px;
-    margin-right: 63px;
   }
 
   // @media (min-width: @desktop-width) {
@@ -29,12 +28,16 @@
   background-color: #f2f2f2;
   color: #000000;
   border: none;
-  padding: 16px;
-  max-width: 398px;
+  padding: 21px;
+  max-width: 388px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .full-name-info__label {
-  max-width: 398px;
+  max-width: 388px;
+  margin-left: 12px;
 }
 
 .full-name-info__input:hover {
