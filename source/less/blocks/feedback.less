@@ -4,11 +4,12 @@
 }
 
 .feedback__header {
-  margin: 115px 0 67px 0;
+  margin: 18px 0 67px 0;
   padding: 0;
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    margin: 115px 0 67px 0;
     padding: 0 80px;
   }
 
@@ -19,8 +20,13 @@
 
 .feedback__intro {
   color: #333333;
-  font-size: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 7px;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
   line-height: 26px;
+  }
 }
 
 .feedback__container-for-intro {

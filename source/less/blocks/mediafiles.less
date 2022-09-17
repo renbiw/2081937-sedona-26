@@ -8,6 +8,7 @@
 }
 
 .mediafiles__slogan {
+  margin: 0;
   font-size: 30px;
   line-height: 26px;
   font-weight: 700;
@@ -28,8 +29,13 @@
   flex-direction: column;
   color: #000000;
   background-color: #ffffff;
+  border-top: 1px solid #E5E5E5;
+  padding-top: 24px;
+  padding-bottom: 25px;
   @media (min-width: @tablet-width) {
     background-color: #f2f2f2;
+    border: none;
+    padding: 0;
   }
   @media (min-width: @desktop-width) {
     color: #ffffff;
@@ -73,10 +79,21 @@
 
 .mediafiles {
   padding-left: 20px;
-}
+
 @media (min-width: @tablet-width) {
   padding-left: 60px;
 }
 @media (min-width: @desktop-width) {
   padding: 0;
+}
+}
+
+.mediafiles__item:nth-child(1) .mediafiles__description {
+  @media (min-width: @desktop-width) {
+    top: 82%;
+  }
+}
+
+.mediafiles__intro {
+  text-align: center;
 }

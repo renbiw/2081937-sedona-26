@@ -3,10 +3,16 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-bottom: 69px;
+  margin-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+
   @media (min-width: @desktop-width) {
+    padding-top: 0;
+    border: none;
     padding-left: 80px;
     padding-right: 80px;
+    margin-bottom: 69px;
    }
 }
 
@@ -14,30 +20,34 @@
   display: flex;
   flex-direction: column;
   border: none;
-  border-top: 1px solid #e5e5e5;
+  //border-top: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     width: 80%;
     border-color: #dbdbdb;
+    margin-left: 100px;
+    padding-left: 44px;
   }
 
    @media (min-width: @desktop-width) {
     width: 100%;
+    padding: 0;
     margin-left: 120px;
     margin-right: 120px;
-    margin-top: 83px;
+    margin-top: 73px;
    }
 }
 
 .checkattraction__container {
   display: flex;
   flex-wrap: wrap;
-  width: 25%;
+  width: 45%;
 
   @media (min-width: @tablet-width) {
-    display: block;
-    width: 38%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
   }
   @media (min-width: @desktop-width) {
     width: 100%;
@@ -59,6 +69,10 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 16px;
+  @media (min-width: @tablet-width) {
+    margin-right: 84px;
+  }
   @media (min-width: @desktop-width) {
     margin-right: 64px;
   }
