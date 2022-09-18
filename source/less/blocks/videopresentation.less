@@ -7,6 +7,12 @@
 .videopresentation {
   margin: 62px 0 120px 0;
   position: relative;
+  @media (min-width: @tablet-width) {
+    margin: 43px 0 53px 0;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 62px 0 97px 0;
+  }
 }
 
 .videopresentation__video {
@@ -15,6 +21,7 @@
   object-fit: contain;
 
   @media (min-width: @tablet-width) {
+    margin-top: 75px;
     height: 500px;
   }
 }
@@ -24,13 +31,26 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
+  @media (min-width: @tablet-width) {
+    top: 59%;
+  }
 }
 
 .videopresentation__container-title {
   padding-left: 26px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 200px;
+    padding: 0 160px;
+    margin-top: 25px;
     text-align: center;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 377px;
+  }
+}
+
+.videopresentation__description {
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
   }
 }

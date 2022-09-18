@@ -1,10 +1,16 @@
 .mediafiles__header {
-  margin: 37px 0 50px 0;
+  margin: 15px 0 50px 0;
   padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    margin: 100px 0 65px 0;
-    padding: 0 180px;
+    margin: 67px 0 81px 0;
+    padding: 0 162px;
+    margin-left: -60px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-bottom: 88px;
+    padding: 0 377px;
   }
 }
 
@@ -100,4 +106,7 @@
 
 .mediafiles__intro {
   text-align: center;
+  @media (min-width: @tablet-width) {
+    margin-top: 31px;
+  }
 }
