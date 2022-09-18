@@ -97,10 +97,15 @@
 .feelings__input:checked + .feelings__label::before {
   background: url("../img/rbchecked.svg") 0 0 no-repeat;
 }
-/* Hover
-.feelings__input:hover  + .feelings__label::before {
 
-}*/
+/* Hover*/
+.feelings__input:hover:checked + .feelings__label::before {
+  background: url("../img/rbchecked_hover.svg") 0 0 no-repeat;
+}
+
+.feelings__input:hover  + .feelings__label::before {
+  background: url("../img/rbnotchecked_hover.svg") 0 0 no-repeat;
+}
 
 /* Disabled */
 .feelings__input:disabled + .feelings__label::before {
