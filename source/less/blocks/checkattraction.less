@@ -13,30 +13,27 @@
     padding-left: 80px;
     padding-right: 80px;
     margin-bottom: 69px;
-   }
+  }
 }
 
 .checkattraction {
   display: flex;
   flex-direction: column;
   border: none;
-  //border-top: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     width: 80%;
     border-color: #dbdbdb;
-    margin-left: 100px;
-    padding-left: 44px;
   }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     width: 100%;
     padding: 0;
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 73px;
-   }
+  }
 }
 
 .checkattraction__container {
@@ -49,6 +46,7 @@
     flex-wrap: wrap;
     width: 90%;
   }
+
   @media (min-width: @desktop-width) {
     width: 100%;
     display: inherit;
@@ -60,8 +58,9 @@
 }
 
 .checkattraction__input:focus + .checkattractionx__label::before {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
+
 .checkattraction__label {
   display: flex;
   align-items: center;
@@ -70,13 +69,16 @@
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 16px;
+
   @media (min-width: @tablet-width) {
     margin-right: 84px;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 64px;
   }
 }
+
 .checkattraction__label::before {
   width: 46px;
   height: 46px;
@@ -87,22 +89,24 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 16px;
-
 }
+
 .checkattraction__label:hover::before {
   background-color: #f2f2f2;
 }
+
 .checkattraction__input:checked + .checkattraction__label:active::before {
   background-color: rgba(255, 255, 255, 0.3);
   background-image: url("../img/checkboxcheckedstate.svg");
 }
+
 .checkattraction__input:checked + .checkattraction__label::before {
   background-image: url("../img/checkboxcheckedstate.svg");
   width: 46px;
   height: 46px;
 }
 
-.checkattraction__label:disabled:before {
+.checkattraction__label:disabled::before {
   background-color: rgba(255, 255, 255, 0.3);
   width: 46px;
   height: 46px;

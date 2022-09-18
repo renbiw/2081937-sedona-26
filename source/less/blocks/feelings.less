@@ -20,7 +20,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   border: none;
-  //border-top: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     width: 80%;
@@ -30,6 +29,7 @@
     margin-left: 96px;
     margin-bottom: 58px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 120px;
     padding: 0;
@@ -40,6 +40,7 @@
   @media (min-width: @tablet-width) {
     margin-right: 49px;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 61px;
   }
@@ -56,11 +57,11 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+
   @media (min-width: @desktop-width) {
     display: inherit;
     width: 100%;
   }
-
 }
 
 .feelings__label {
@@ -70,39 +71,38 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-	cursor: pointer;
-	position: relative;
-	padding-left: 72px;
-	margin-right: 0;
-	user-select: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 72px;
+  margin-right: 0;
+  user-select: none;
   margin-bottom: 36px;
 
-}
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    left: 0;
+    background: url("../img/rbnotchecked.svg") 0 0 no-repeat;
+    top: 0;
 
-.feelings__label::before {
-	content: "";
-	display: inline-block;
-	width: 46px;
-	height: 46px;
-	position: absolute;
-	left: 0;
-	background: url("../img/rbnotchecked.svg") 0 0 no-repeat;
-  top: 0;
-  @media (min-width: @tablet-width) {
-    top: -40%;
+    @media (min-width: @tablet-width) {
+      top: -40%;
+    }
   }
 }
 
 .feelings__input:checked + .feelings__label::before {
   background: url("../img/rbchecked.svg") 0 0 no-repeat;
 }
-
-/* Hover */
+/* Hover
 .feelings__input:hover  + .feelings__label::before {
 
-}
+}*/
 
 /* Disabled */
 .feelings__input:disabled + .feelings__label::before {
-	filter: grayscale(100%);
+  filter: grayscale(100%);
 }
