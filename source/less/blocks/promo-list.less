@@ -1,10 +1,70 @@
 .promo-list {
   list-style-type: none;
-  background-color: #e7e5e5;
+  background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
       flex-wrap: nowrap;
     }
+}
+
+.promo-list__item {
+  text-align: center;
+  @media (min-width: @desktop-width) {
+    min-height: 330px;
+  }
+}
+
+.promo-list__logo{
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 0;
+
+  &--hostel {
+    min-width: 40px;
+    min-height: 40px;
+    background-image: url("../img/home-phone.svg");
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/home.svg");
+      min-width: 75px;
+      min-height: 72px;
+      margin-bottom: 27px;
+      margin-top: 60px;
+    }
+    @media (min-width: @desktop-width) {
+      margin-bottom: 25px;
+    }
+  }
+  &--gift {
+    background-image: url("../img/gift-phone.svg");
+    min-width: 32px;
+    min-height: 38px;
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/gift.svg");
+      min-width: 76px;
+      min-height: 70px;
+      margin-bottom: 27px;
+      margin-top: 57px;
+    }
+    @media (min-width: @desktop-width) {
+      margin-bottom: 25px;
+    }
+  }
+  &--food {
+    background-image: url("../img/food-phone.svg");
+    min-width: 40px;
+    min-height: 40px;
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/food.svg");
+      min-width: 76px;
+      min-height: 70px;
+      margin-bottom: 27px;
+      margin-top: 63px;
+    }
+    @media (min-width: @desktop-width) {
+      margin-bottom: 25px;
+    }
+  }
+
 }
