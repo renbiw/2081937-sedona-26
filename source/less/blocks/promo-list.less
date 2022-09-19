@@ -3,21 +3,32 @@
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 35px;
+  padding-left: 67px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     flex-wrap: nowrap;
+    padding-right: 0;
+    padding-left: 33px;
+    padding-bottom: 47px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-bottom: 0;
   }
 }
 
 .promo-list__item {
-  text-align: center;
+  text-align: start;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 43px;
+    text-align: center;
   }
   @media (min-width: @desktop-width) {
     min-height: 330px;
-    padding: 0 30px;
+    padding: 0 62px;
+    margin-bottom: 0;
   }
 }
 
@@ -46,6 +57,7 @@
 
     @media (min-width: @desktop-width) {
       margin-bottom: 19px;
+      margin-left: -9px;
     }
   }
 
@@ -68,7 +80,7 @@
 
     @media (min-width: @desktop-width) {
       margin-bottom: 16px;
-      margin-left: -27px;
+      margin-left: -4px;
     }
   }
 
@@ -100,7 +112,21 @@
   text-align: start;
   line-height: 26px;
   font-size: 18px;
+  margin-top: 37px;
+  &--souvenir {
+    margin-top: 16px;
+  }
+  &--food {
+    margin-top: 18px;
+  }
   @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-top: 32px;
     text-align: center;
+    font-size: 21px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 21px;
+    margin-top: 0;
   }
 }
