@@ -14,8 +14,8 @@ import del from 'del';
 
 // Styles
 
-export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+const styles = () => {
+  return gulp.src('source/less/*.less',{ sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
@@ -41,7 +41,7 @@ const script = () => {
 }
 
 //images
- const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'));
@@ -50,6 +50,11 @@ const script = () => {
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
+}
+
+const webmanifest = () => {
+  return gulp.src('source/*.webmanifest')
+    .pipe(gulp.dest('build'));
 }
 
 //WebP
@@ -89,8 +94,8 @@ const copy = (done) => {
   done();
 }
 //Clean
-export const clean = () => {
-  return del('buid');
+const clean = () => {
+  return del('build');
 }
 // Server
 
@@ -131,11 +136,12 @@ export const build = gulp.series(
 
 
 //Default
-
-export default gulp.series(
+ export default gulp.series(
   clean,
   copy,
   optimizeImages,
+  copyImages,
+  webmanifest,
   gulp.parallel(
     styles,
     html,
