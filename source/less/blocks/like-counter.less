@@ -1,14 +1,21 @@
 .like-counter {
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 85%;
-    right: 5%;
-  }
 
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 85%;
+    right: 6%;
+  }
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 35%;
     right: 5%;
+  }
+}
+
+.mediafiles__item:nth-child(1) + .like-counter {
+  @media (min-width: @desktop-width) {
+    top: 87%;
+    right: 2%;
   }
 }
 
@@ -26,6 +33,7 @@
 }
 
 .like-counter__like-count {
+  font-weight: 700;
   @media (min-width: @tablet-width) {
     color: #000000;
   }

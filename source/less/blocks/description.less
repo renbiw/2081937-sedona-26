@@ -4,12 +4,18 @@
 
   @media (min-width: @tablet-width) {
     color: #000000;
-    margin-bottom: 14px;
+    margin-top: 22px;
+    margin-bottom: -13px;
   }
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
     margin: 0;
+  }
+  &--big {
+    @media (min-width: @desktop-width) {
+
+    }
   }
 }
 
@@ -24,13 +30,24 @@
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
+    margin-top: -4px;
+  }
+  &--big {
+    @media (min-width: @desktop-width) {
+
+    }
   }
 }
 
 .description {
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 75%;
+    top: 33%;
     left: 5%;
+  }
+  &--big {
+    @media (min-width: @desktop-width) {
+      top: 86%;
+    }
   }
 }

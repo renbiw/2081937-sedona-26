@@ -1,6 +1,10 @@
 .feedback {
   display: flex;
   flex-direction: column;
+  margin-bottom: 56px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .feedback__header {
@@ -9,7 +13,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin: 63px 0 67px 0;
+    margin: 63px 0 74px 0;
     padding: 0 69px;
   }
 
@@ -27,7 +31,7 @@
   margin-bottom: 30px;
 
   @media (min-width: @desktop-width) {
-    margin-left: 35px;
+    margin-left: 6px;
     margin-bottom: 14px;
   }
 }

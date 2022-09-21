@@ -1,6 +1,6 @@
 .searching-hostel {
   margin: 52px 0 66px 0;
-  padding: 0 20px;
+  padding: 0 6px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -21,6 +21,9 @@
     font-size: 30px;
     line-height: 26px;
   }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .searching-hostel__button {
@@ -33,6 +36,10 @@
   font-weight: 700;
   &:hover{
     background-color: #669ec0;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
   }
 
   @media (min-width: @tablet-width) {

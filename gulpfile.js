@@ -73,13 +73,13 @@ const svg = () => {
 }
 
 const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
+  return gulp.src('source/img/icon/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
-      inlineSvg: true
+    inlineSvg: true
     }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+  .pipe(rename('sprite1.svg'))
+  .pipe(gulp.dest('build/img'));
 }
 
 //Copy
